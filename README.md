@@ -1,2 +1,9 @@
-# music-player-fe
-Music player implemented on Nuxt 3.
+# Music Player
+
+FrontEnd part.
+
+## Technologies
+
+- Nuxt 3
+- Vue Router
+- Pinia

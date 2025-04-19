@@ -7,3 +7,9 @@ FrontEnd part.
 - Nuxt 3
 - Vue Router
 - Pinia
+- SCSS
+
+Subtechnologies:
+- ESLint
+- Husky
+- PrimeVue Icons

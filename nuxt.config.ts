@@ -24,4 +24,12 @@ export default defineNuxtConfig({
       },
     },
   },
+  modules: ["@nuxtjs/color-mode"],
+  colorMode: {
+    preference: "system",
+    fallback: "light",
+    globalName: "__NUXT_COLOR_MODE__",
+    storage: "localStorage",
+    storageKey: "theme-mode",
+  },
 });

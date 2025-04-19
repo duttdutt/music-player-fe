@@ -1,6 +1,16 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<style lang="scss">
+html,
+body,
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+</style>

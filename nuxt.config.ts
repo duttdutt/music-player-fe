@@ -7,19 +7,18 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  typescript: {
-    typeCheck: true,
-    strict: true,
-  },
   alias: {
     "@scss": resolve(__dirname, "/assets/scss"),
     "@components": resolve(__dirname, "/components/"),
+    "@pages": resolve(__dirname, "/pages/"),
   },
+  css: ["@/assets/scss/themes.scss"],
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/assets/scss/main.scss" as *;',
+          additionalData:
+            '@use "~/assets/scss/main.scss" as *;@use "~/assets/scss/global/_reset.scss" as *;',
         },
       },
     },
@@ -31,5 +30,6 @@ export default defineNuxtConfig({
     globalName: "__NUXT_COLOR_MODE__",
     storage: "localStorage",
     storageKey: "theme-mode",
+    classSuffix: "-theme",
   },
 });

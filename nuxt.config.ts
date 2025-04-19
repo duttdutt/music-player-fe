@@ -15,4 +15,5 @@ export default defineNuxtConfig({
     "@scss": resolve(__dirname, "/assets/scss"),
     "@components": resolve(__dirname, "/components/"),
   },
+  css: ["~/assets/scss/main.scss"],
 });

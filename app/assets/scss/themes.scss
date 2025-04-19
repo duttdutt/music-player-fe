@@ -1,0 +1,26 @@
+@use "variables/colors" as *;
+@use "variables/typography" as *;
+
+html {
+  font-family: $font-family-primary;
+  --bg-primary: #{$gray-100};
+  --bg-secondary: #{$gray-200};
+  --text-primary: #{$gray-800};
+  --border-primary: #{$gray-300};
+  --accent-primary: #{$purple-300};
+}
+
+html.dark-purple {
+  --bg-primary: #{$gray-900};
+  --bg-secondary: #{$gray-800};
+  --text-primary: #{$gray-100};
+  --border-primary: #{$gray-700};
+  --accent-primary: #a96fff;
+}
+
+html,
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}

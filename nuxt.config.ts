@@ -11,8 +11,9 @@ export default defineNuxtConfig({
     "@scss": resolve(__dirname, "/assets/scss"),
     "@components": resolve(__dirname, "/components/"),
     "@pages": resolve(__dirname, "/pages/"),
+    "@stores": resolve(__dirname, "/stores/"),
   },
-  css: ["@/assets/scss/themes.scss"],
+  css: ["@/assets/scss/themes.scss", "primeicons/primeicons.css"],
   vite: {
     css: {
       preprocessorOptions: {
@@ -23,7 +24,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@nuxtjs/color-mode"],
+  modules: ["@pinia/nuxt", "@nuxtjs/color-mode"],
   colorMode: {
     preference: "system",
     fallback: "light",

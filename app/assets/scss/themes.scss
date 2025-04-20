@@ -6,16 +6,27 @@ html {
   --bg-primary: #{$gray-100};
   --bg-secondary: #{$gray-200};
   --text-primary: #{$gray-800};
+  --text-muted: #{$gray-600};
+  --text-muted-hover: #{$gray-500};
   --border-primary: #{$gray-300};
-  --accent-primary: #{$purple-300};
+  --accent-primary: #{$purple-500};
+  --accent-primary-hover: #{$purple-100};
+  --accent-secondary: #{$pink-600};
+  --accent-secondary-hover: #{$pink-100};
+
+  --i-like: #{$red-600};
 }
 
 html.dark-purple {
   --bg-primary: #{$gray-900};
   --bg-secondary: #{$gray-800};
   --text-primary: #{$gray-100};
+  --text-muted: #{$gray-400};
   --border-primary: #{$gray-700};
-  --accent-primary: #a96fff;
+  --accent-primary: #{$purple-400};
+  --accent-primary-hover: #{$purple-900};
+
+  --i-like: #{$red-500};
 }
 
 html,
